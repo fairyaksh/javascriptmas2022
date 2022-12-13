@@ -1,5 +1,6 @@
 // includes -- checks for str inside str, returns boolean
 // contains -- used in DOM manipulation to check if a node is a descendant of a node
+// https://dmitripavlutin.com/replace-all-string-occurrences-javascript/#2-replace-with-a-global-regular-expression
 const panic = (str) => {
     let searchExp = " ";
     let replaceWith = " 😱 ";
