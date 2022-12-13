@@ -1,18 +1,22 @@
-/* Panic function 
-Write a PANIC! function. The function should take in a sentence and return the same
-sentence in all caps with an exclamation point (!) at the end. Use JavaScript's
-built in string methods. 
-
-If the string is a phrase or sentence, add a 😱 emoji in between each word. 
-
-Example input: "Hello"
-Example output: "HELLO!"
-
-Example input: "I'm almost out of coffee"
-Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
-*/
-
+// includes -- checks for str inside str, returns boolean
+// contains -- used in DOM manipulation to check if a node is a descendant of a node
+const panic = (str) => {
+    let searchExp = " ";
+    let replaceWith = " 😱 ";
+    let resultStr;
+    if (str.includes(searchExp)) {
+        resultStr = str.replaceAll(searchExp, replaceWith)
+    } else {
+        resultStr = str;
+    }
+    let shoutStr = resultStr.toUpperCase();
+    let finalStr = shoutStr.concat("!")
+    return finalStr;
+}
 
 // Test your function
 console.log(panic("I'm almost out of coffee")); 
 console.log(panic("winter is coming"))
+console.log(panic("hello"))
+console.log(panic("ARIGATO"))
+console.log(panic("ARIGATO GOZAIMASU"))
