@@ -1,4 +1,3 @@
-
 # 🍭 Candy Sale
 
 - It's the day after Halloween 🎃 and all the candy is on sale!
